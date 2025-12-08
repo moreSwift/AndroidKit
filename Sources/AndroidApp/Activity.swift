@@ -2,6 +2,7 @@
 import AndroidJavaIO
 import AndroidJavaLang
 import AndroidContent
+import AndroidView
 import JavaKit
 import JavaKitCollection
 import JavaRuntime
@@ -11,6 +12,10 @@ open class Activity: ContextWrapper {
   
   @JavaMethod
   @_nonoverride public convenience init(environment: JNIEnvironment? = nil)
+
+
+  @JavaMethod
+  open func getWindowManager() -> WindowManager!
 
   @JavaMethod
   open func removeDialog(_ arg0: Int32)
@@ -80,6 +85,9 @@ open class Activity: ContextWrapper {
 
   @JavaMethod
   open func setContentView(_ arg0: Int32)
+
+  @JavaMethod
+  open func setContentView(_ arg0: View?)
 
   @JavaMethod
   open func getActionBar() -> ActionBar!

@@ -56,9 +56,7 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(
-            path: "../"
-        )
+        .package(name: "Android", path: "../")
     ],
     targets: [
         .target(

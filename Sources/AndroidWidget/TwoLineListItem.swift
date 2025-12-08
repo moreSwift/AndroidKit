@@ -14,7 +14,7 @@ open class TwoLineListItem: RelativeLayout {
   open func getText2() -> TextView!
 
   @JavaMethod
-  open func onFinishInflate()
+  open override func onFinishInflate()
 }
 extension JavaClass<TwoLineListItem> {
   @JavaStaticField(isFinal: true)

@@ -51,8 +51,8 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/PureSwift/swift-java.git",
-            branch: "feature/android-shim"
+            url: "https://github.com/stackotter/swift-java",
+            revision: "400aa0a4d20f3d58041fc0c5df39c846abc6e0a9"
         )
     ],
     targets: [
