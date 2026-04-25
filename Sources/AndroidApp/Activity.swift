@@ -2,6 +2,7 @@
 import JavaIO
 import JavaLang
 import AndroidContent
+import AndroidView
 import SwiftJava
 import CSwiftJavaJNI
 
@@ -79,6 +80,9 @@ open class Activity: ContextWrapper {
 
   @JavaMethod
   open func setContentView(_ arg0: Int32)
+
+  @JavaMethod
+  open func setContentView(_ arg0: View?)
 
   @JavaMethod
   open func getActionBar() -> ActionBar!

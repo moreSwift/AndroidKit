@@ -8,7 +8,7 @@ open class DialerFilter: RelativeLayout {
   open func append(_ arg0: String)
 
   @JavaMethod
-  open func onFinishInflate()
+  open override func onFinishInflate()
 
   @JavaMethod
   open func isQwertyKeyboard() -> Bool
