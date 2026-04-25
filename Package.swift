@@ -280,6 +280,7 @@ var package = Package(
       dependencies: [
         "AndroidJava",
         "AndroidContent",
+        "AndroidView",
       ],
       exclude: ["swift-java.config"],
       swiftSettings: [
